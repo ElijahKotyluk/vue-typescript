@@ -5,7 +5,8 @@
 </template>
 
 
-<script>
+<script lang="ts">
+import Vue from 'vue';
 import HelloWorld from './components/HelloWorld.vue';
 
 export default {
@@ -17,7 +18,7 @@ export default {
     greet: 'Welcome to your new Vue project',
   }),
   mounted() {
-    console.log('Current route:', this.$route.name);
+    console.log('Current route:');
   },
 };
 </script>
