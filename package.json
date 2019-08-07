@@ -31,8 +31,9 @@
     "serve:dev": "webpack-dev-server --mode development --progress --hot --open",
     "build": "webpack --mode production --progress",
     "test": "jest --coverage",
-    "lint": "tslint src/**/*.{ts,vue}",
-    "lint:fix": "tslint --fix src/ts/*.{ts,vue} src/ts/**/*.{ts,vue}",
+    "lint:??": "wotan -m @fimbul/valtyr -p ./tslint.json",
+    "lint": "wotan -p tsconfig.json -c tslint.json",
+    "lint:fix": "wotan -p tsconfig.json -c tslint.json --fix",
     "commit": "yarn git-cz"
   },
   "dependencies": {
@@ -43,6 +44,9 @@
     "vuex": "^3.1.1"
   },
   "devDependencies": {
+    "@fimbul/valtyr": "^0.21.0",
+    "@fimbul/ve": "^0.21.0",
+    "@fimbul/wotan": "^0.21.1",
     "@types/jest": "^23.3.2",
     "@vue/test-utils": "^1.0.0-beta.25",
     "commitizen": "^3.1.1",

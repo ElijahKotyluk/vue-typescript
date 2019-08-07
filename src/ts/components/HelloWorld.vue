@@ -47,11 +47,11 @@ export default Vue.extend({
     },
   },
   mounted() {
-    this.hello()
+    this.hello();
   },
   methods: {
     hello() {
-      console.log('Hello world')
+      console.log('Hello world');
     },
   },
 });

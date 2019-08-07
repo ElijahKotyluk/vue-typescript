@@ -11,6 +11,11 @@
         "experimentalDecorators": true
     },
     "include": [
-        "./src/**/*"
-    ]
+        "src/ts/*.ts",
+        "src/ts/*.vue",
+        "test/*.ts",
+    ],
+    "exclude": [
+        "node_modules"
+    ],
 }
